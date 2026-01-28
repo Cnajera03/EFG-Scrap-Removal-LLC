@@ -25,3 +25,14 @@ form.addEventListener("submit", function (e) {
     }
   );
 });
+
+document.querySelectorAll(".slideshow").forEach(slideshow => {
+  let slides = slideshow.querySelectorAll("img");
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 2000); // change image every 3 seconds
+});

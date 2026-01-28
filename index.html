@@ -7,7 +7,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="efg.css">
- <script src="efg.js"></script>
+
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
@@ -55,20 +55,38 @@
   <h2>What We Do</h2>
 
   <div class="services">
+
+    <!-- GENERAL -->
     <div class="card">
       <h3>General Services</h3>
+
+      <div class="slideshow">
+        <img src="images/efgcar.jpg" class="active" alt="Junk car removal">
+        <img src="images/commercial2.jpg" alt="Scrap hauling">
+        <img src="images/commercial3.jpg" alt="Appliance removal">
+      </div>
+
       <ul>
         <li>Junk & Scrap Removal</li>
         <li>Furniture & Appliance Removal</li>
         <li>Leaf Removal</li>
         <li>Junk Car Removal</li>
         <li>Material Delivery</li>
-        <li>Small Demolitions (wood & metal)</li>
+        <li>Small Demolitions</li>
       </ul>
     </div>
 
+    <!-- RESIDENTIAL -->
     <div class="card" id="residential">
       <h3>Residential</h3>
+
+      <div class="slideshow">
+        <img src="images/residential.jpg" class="active" alt="Residential cleanup">
+        <img src="images/residential2.jpg" alt="Couch removal">
+        <img src="images/residential3.jpg" alt="Attic cleanout">
+        <img src="images/residential5.jpg" alt="Kitchen demo">
+      </div>
+
       <ul>
         <li>Couches & Mattresses</li>
         <li>Fridges, Washers, Dryers</li>
@@ -79,8 +97,18 @@
       </ul>
     </div>
 
+    <!-- COMMERCIAL -->
     <div class="card" id="commercial">
       <h3>Commercial</h3>
+
+      <div class="slideshow">
+        <img src="images/commercial.jpg" class="active" alt="Commercial demolition">
+        <img src="images/molch.jpg" alt="Retail cleanup">
+        <img src="images/molch2.jpg" alt="Construction debris">
+        <img src="images/molch3.jpg" alt="Post construction cleanup">
+        <img src="images/molch4.jpg" alt="Carpet removal">
+      </div>
+
       <ul>
         <li>House Demolition</li>
         <li>Retail Store Cleaning</li>
@@ -89,6 +117,7 @@
         <li>Carpet Removal</li>
       </ul>
     </div>
+
   </div>
 </section>
 
@@ -103,6 +132,7 @@
   <p>© 2026 EFG Scrap Removal LLC | Raleigh, NC</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- JS (LOAD LAST + DEFER) -->
+<script src="efg.js" defer></script>
 </body>
 </html>
