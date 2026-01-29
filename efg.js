@@ -36,3 +36,17 @@ document.querySelectorAll(".slideshow").forEach(slideshow => {
     slides[index].classList.add("active");
   }, 2000); // change image every 3 seconds
 });
+const videos = document.querySelectorAll(".hero-video");
+let currentVideo = 0;
+const switchTime = 7000; // 7 seconds per video
+
+setInterval(() => {
+  videos[currentVideo].classList.remove("active");
+  videos[currentVideo].pause();
+
+  currentVideo = (currentVideo + 1) % videos.length;
+
+  videos[currentVideo].classList.add("active");
+  videos[currentVideo].currentTime = 0;
+  videos[currentVideo].play();
+}, switchTime);

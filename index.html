@@ -15,7 +15,11 @@
 
 <header>
   <nav>
-    <h1>EFG Scrap Removal LLC</h1>
+   <div class="logo-group">
+  <img src="Images/efglogo.jpg">
+  <h1>EFG Scrap Removal LLC</h1>
+</div>
+
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#residential">Residential</a></li>
@@ -24,29 +28,57 @@
     </ul>
   </nav>
 </header>
+<form id="callForm">
 
 <section class="hero">
-  <h2>Junk & Scrap Removal – Raleigh, NC</h2>
-  <p>
-    Serving Raleigh and a 50-mile radius. Junk removal, small demolitions,
-    appliance removal, junk cars, cleanouts & more.
-  </p>
 
-  <a href="#contact" class="btn">Request a Call</a>
+  <div class="video-wrapper">
+    <video class="hero-video active" autoplay muted loop playsinline>
+      <source src="Images/MicrosoftTeams-video.mp4" type="video/mp4">
+    </video>
 
-  <!-- CALL FORM -->
-  <div class="call-box" id="contact">
-    <h3>Let Us Call You</h3>
-    <form id="callForm">
-      <div class="call-grid">
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="text" name="last_name" placeholder="Last Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="text" name="zip" placeholder="ZIP Code" required>
-        <button type="submit" class="btn">Request A Call</button>
+    <video class="hero-video" muted loop playsinline>
+      <source src="Images/MicrosoftTeams-video (1).mp4" type="video/mp4">
+    </video>
+
+    <video class="hero-video" muted loop playsinline>
+      <source src="Images/MicrosoftTeams-video (3).mp4" type="video/mp4">
+    </video>
+
+    <video class="hero-video" muted loop playsinline>
+      <source src="Images/MicrosoftTeams-video (4).mp4" type="video/mp4">
+    </video>
+  </div>
+ <!-- DARK OVERLAY -->
+  <div class="hero-overlay"></div>
+   <!-- HERO CONTENT -->
+  <div class="hero-content">
+ 
+     <h2>Junk & Scrap Removal  Raleigh, NC</h2>
+      <p>
+        Serving Raleigh and a 50-mile radius. Junk removal, cleanouts,
+        demolitions, appliances, scrap & more.
+      </p>
+
+      <a href="#contact" class="btn">Request a Call</a>
+
+      <div class="call-box" id="contact">
+        <h3>Book a Call</h3>
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="tel" placeholder="Phone" required>
+          <textarea placeholder="What do you need removed?" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-    </form>
+    </div>
+  </div>
+
+</section>
+
+
+
+ 
     <p id="formMsg"></p>
   </div>
 </section>
@@ -129,7 +161,7 @@
 
 <footer>
   <p>Payments Accepted: Cash • Zelle • Checks</p>
-  <p>© 2026 EFG Scrap Removal LLC | Raleigh, NC</p>
+  <p>© 2026 EFG Scrap Removal LLC | Raleigh, NC | Designed by CN</p>
 </footer>
 
 <!-- JS (LOAD LAST + DEFER) -->
