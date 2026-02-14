@@ -1,6 +1,6 @@
 // INIT EMAILJS
 (function () {
-  emailjs.init("YOUR_PUBLIC_KEY"); // replace
+  emailjs.init("DcFu_X6vKCHsrvHP8"); // replace
 })();
 
 const form = document.getElementById("callForm");
@@ -10,8 +10,8 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "YOUR_SERVICE_ID",
-    "YOUR_TEMPLATE_ID",
+    "service_fgrsz78",
+    "template_gbfets9",
     this
   ).then(
     () => {

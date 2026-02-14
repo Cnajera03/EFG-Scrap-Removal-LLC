@@ -15,13 +15,11 @@
 
 <header>
   <nav>
-   <div class="logo-group">
-  <img src="Images/efglogo.jpg">
- 
-  <h1 class="desktop-title">EFG Scrap Removal LLC</h1>
-<h1 class="mobile-title">EFG Scrap Removal</h1>
-
-</div>
+    <div class="logo-group">
+      <img src="Images/efglogo.jpg">
+      <h1 class="desktop-title">EFG Scrap Removal LLC</h1>
+      <h1 class="mobile-title">EFG Scrap Removal</h1>
+    </div>
 
     <ul>
       <li><a href="#services">Services</a></li>
@@ -31,7 +29,6 @@
     </ul>
   </nav>
 </header>
-<form id="callForm">
 
 <section class="hero">
 
@@ -52,37 +49,33 @@
       <source src="Images/MicrosoftTeams-video (4).mp4" type="video/mp4">
     </video>
   </div>
- <!-- DARK OVERLAY -->
+
+  <!-- DARK OVERLAY -->
   <div class="hero-overlay"></div>
-   <!-- HERO CONTENT -->
+
+  <!-- HERO CONTENT -->
   <div class="hero-content">
- 
-     <h2>Junk & Scrap Removal  Raleigh, NC</h2>
-      <p>
-        Serving Raleigh and a 50-mile radius. Junk removal, cleanouts,
-        demolitions, appliances, scrap & more.
-      </p>
+    <h2>Junk & Scrap Removal Raleigh, NC</h2>
+    <p>
+      Serving Raleigh and a 50-mile radius. Junk removal, cleanouts,
+      demolitions, appliances, scrap & more.
+    </p>
 
-      <a href="#contact" class="btn">Request a Call</a>
+    <a href="#contact" class="btn">Request a Call</a>
 
-      <div class="call-box" id="contact">
-        <h3>Book a Call</h3>
-        <form>
-          <input type="text" placeholder="Name" required>
-          <input type="tel" placeholder="Phone" required>
-          <textarea placeholder="What do you need removed?" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+    <div class="call-box" id="contact">
+      <h3>Book a Call</h3>
+
+      <!-- ✅ FIXED EMAILJS FORM -->
+      <form id="callForm">
+        <input type="text" name="user_name" placeholder="Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone" required>
+        <textarea name="message" placeholder="What do you need removed?" required></textarea>
+        <button type="submit">Submit</button>
+        <p id="formMsg"></p>
+      </form>
+
     </div>
-  </div>
-
-</section>
-
-
-
- 
-    <p id="formMsg"></p>
   </div>
 </section>
 
@@ -91,16 +84,13 @@
 
   <div class="services">
 
-    <!-- GENERAL -->
     <div class="card">
       <h3>General Services</h3>
-
       <div class="slideshow">
-        <img src="Images/efgcar.jpg" class="active" alt="Junk car removal">
-        <img src="Images/commercial2.jpg" alt="Scrap hauling">
-        <img src="Images/commercial3.jpg" alt="Appliance removal">
+        <img src="Images/efgcar.jpg" class="active">
+        <img src="Images/commercial2.jpg">
+        <img src="Images/commercial3.jpg">
       </div>
-
       <ul>
         <li>Junk & Scrap Removal</li>
         <li>Furniture & Appliance Removal</li>
@@ -111,17 +101,14 @@
       </ul>
     </div>
 
-    <!-- RESIDENTIAL -->
     <div class="card" id="residential">
       <h3>Residential</h3>
-
       <div class="slideshow">
-        <img src="Images/residential.jpg" class="active" alt="Residential cleanup">
-        <img src="Images/residential2.jpg" alt="Couch removal">
-        <img src="Images/residential3.jpg" alt="Attic cleanout">
-        <img src="Images/residential5.jpg" alt="Kitchen demo">
+        <img src="Images/residential.jpg" class="active">
+        <img src="Images/residential2.jpg">
+        <img src="Images/residential3.jpg">
+        <img src="Images/residential5.jpg">
       </div>
-
       <ul>
         <li>Couches & Mattresses</li>
         <li>Fridges, Washers, Dryers</li>
@@ -132,18 +119,15 @@
       </ul>
     </div>
 
-    <!-- COMMERCIAL -->
     <div class="card" id="commercial">
       <h3>Commercial</h3>
-
       <div class="slideshow">
-        <img src="Images/commercial.jpg" class="active" alt="Commercial demolition">
-        <img src="Images/molch.jpg" alt="Retail cleanup">
-        <img src="Images/molch2.jpg" alt="Construction debris">
-        <img src="Images/molch3.jpg" alt="Post construction cleanup">
-        <img src="Images/molch4.jpg" alt="Carpet removal">
+        <img src="Images/commercial.jpg" class="active">
+        <img src="Images/molch.jpg">
+        <img src="Images/molch2.jpg">
+        <img src="Images/molch3.jpg">
+        <img src="Images/molch4.jpg">
       </div>
-
       <ul>
         <li>House Demolition</li>
         <li>Retail Store Cleaning</li>
@@ -167,7 +151,7 @@
   <p>© 2026 EFG Scrap Removal LLC | Raleigh, NC | Designed by CN</p>
 </footer>
 
-<!-- JS (LOAD LAST + DEFER) -->
+<!-- JS -->
 <script src="efg.js" defer></script>
 </body>
 </html>
